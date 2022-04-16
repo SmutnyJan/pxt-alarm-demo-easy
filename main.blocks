@@ -1,4 +1,31 @@
-<xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="pxt-on-start"></block>
-  <block type="device_forever"></block>
-</xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="H,iB^MV71V{LOcC7MO9u">vysledek</variable></variables><block type="pxt-on-start" id="8ucZ,J?ocdVt8P{v$R[!" x="20" y="20"><statement name="HANDLER"><block type="device_show_leds" id="2V7otEC:~:v%ZpX{RXz#"><field name="LEDS">`
+        . . # . . 
+        . # # # . 
+        . # # # . 
+        # # # # # 
+        . . . . .
+        `</field><next><block type="radio_set_group" id="c5ih~t7W$S0Jng.054~o"><value name="ID"><shadow type="math_number_minmax" id="a|x(ec5BTlK0p$rSClO]"><mutation min="0" max="255" label="Number" precision="0"/><field name="SLIDER">1</field></shadow></value></block></next></block></statement></block><block type="alarm_onAlarm" id="az^SSUhi_{=i19@Yu=Uh" x="373" y="20"><statement name="HANDLER"><block type="device_play_note" id="=VymPoy8q^TeP5w9A=fP"><value name="note"><shadow type="device_note" id="~a_CAk(,HztM|.,jsRfs"><field name="name">262</field></shadow></value><value name="duration"><shadow type="device_beat" id="*JUVwJt~Rb~=^bt6o$OC"><field name="fraction">BeatFraction.Whole</field></shadow></value></block></statement></block><block type="device_button_event" id="7Oryu7A?l,uV2Oe2#k%p" x="854" y="20"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="device_show_leds" id="j_asHn{Jt9GhDF:ONc4:"><field name="LEDS">`
+        . . # . . 
+        . # # # . 
+        . # # # . 
+        # # # # # 
+        . . # . .
+        `</field><next><block type="alarm_turnOnAlarmAndBroadcast" id="DJf==MI7Itc8YPCGWkGG"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation></block></next></block></statement></block><block type="device_button_event" id="ZRD_;ziDOxKT:!!N)z?4" x="1235" y="20"><field name="NAME">Button.B</field><statement name="HANDLER"><block type="device_show_leds" id="JO}w_WsP1P^ss:uEhm#^"><field name="LEDS">`
+        . . # . . 
+        . # # # . 
+        . # # # . 
+        # # # # # 
+        . . . . .
+        `</field><next><block type="alarm_turnOffAlarmAndBroadcast" id="$Amv`8:hh~QhBPeD!h[."><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation></block></next></block></statement></block><block type="radio_on_string_drag" id="8=!W7ntaBNRGbhi~KBrT" x="20" y="418"><value name="HANDLER_DRAG_PARAM_receivedString"><shadow type="argument_reporter_string" id="utF4r,g;lP:,-H5uC1Ig"><field name="VALUE">receivedString</field></shadow></value><statement name="HANDLER"><block type="variables_set" id="Igtho:uzz|7=vEPYNn3X"><field name="VAR" id="H,iB^MV71V{LOcC7MO9u">vysledek</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="alarm_receiveBroadcast" id="HOq0%aRvxT{tGHCKxtbX"><value name="message"><block type="argument_reporter_string" id="-T`S~B`;PKa3w+4!1f`d"><field name="VALUE">receivedString</field></block></value></block></value><next><block type="controls_if" id="*6Vvt${@XOjJ{[}L5Vd1"><mutation else="1"/><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id=".J(C[a6w;OeY)+9KE1c|"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="-V[zr6w0JcB:P?3|{:|#"><field name="VAR" id="H,iB^MV71V{LOcC7MO9u">vysledek</field></block></value><value name="B"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="logic_boolean" id="lQGk7slHW~a3V(/PB]Lf"><field name="BOOL">TRUE</field></block></value></block></value><statement name="DO0"><block type="device_show_leds" id="xm?Q9dECiaqc.:!)$]6l"><field name="LEDS">`
+        . . # . . 
+        . # # # . 
+        . # # # . 
+        # # # # # 
+        . . # . .
+        `</field></block></statement><statement name="ELSE"><block type="device_show_leds" id="J(pq.R~2cCx=?F+JKTPn"><field name="LEDS">`
+        . . # . . 
+        . # # # . 
+        . # # # . 
+        # # # # # 
+        . . . . .
+        `</field></block></statement></block></next></block></statement></block></xml>
